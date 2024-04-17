@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #2e1b5a;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 15px;
+    color: #00ff88;
+}
+
+a:hover {
+    color: white;
+    transition: 0.6s;
+}
+
+.cadastro {
+    color: #00ff88;
+    border: 1px solid;
+    border-radius: 25px;
+}
+
+.cadastro:hover {
+    background-color: white;
+    color: #2e1b5a;
+}
+
+.nome-site h1 {
+    margin-right: 250px;
+    color: #00ff88;
+}
+
+.main-login {
+    height: 90vh;
+    width: 100vw;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70p;
+}
+
+.left-login {
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    color: #00ff88;
+    cursor: default;
+}
+
+.h2 {
+    margin-bottom: 50px;
+    cursor: default;
+}
+
+.left-login h2 {
+    font-size: 5vw;
+    color: white;
+    line-height: 50px;
+    margin: 0;
+}
+
+.left-login-image {
+    width: 45vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+    cursor: default;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+    color: #f0ffff94;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding-top: 10px;
+        height: 30vh;
+        width: 100vw;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nome-site, h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: ce;
+        margin-left: 18%;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        width: 90vw;
+        align-items: center;
+    }
+
+    a {
+        width: 100vw;
+        display: inline;
+        justify-content: center;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    .cadastro {
+        display: flex;
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+   
+    .main-login {
+        flex-direction: column;
+        height: 70vh;
+    }
+    .left-login > .h2 {
+        display: none;
+    }
+    .left-login {
+        width: 90vw;
+        height: auto;
+    }
+    .right-login {
+        width: auto;
+        height: auto;
+    }
+    .left-login-image {
+        display: none;
+    }
+    .card-login {
+        width: 95%;
+    }
+}
