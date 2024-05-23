@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --fonte-padrao: "Open sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: "Open sans";
+}
+header {
+    height: 10vh;
+    background-color: #FF9933;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    margin: 0px 40px;
+    padding: 20px 40px;
+    color: white;
+    cursor: default;
+}
+nav {
+    margin: 0px 40px;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+}
+li {
+    margin: 0px 30px;
+    padding: 5px;
+    list-style-type: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+a:hover {
+    transition: 0.4s;
+    background-color: #FFFFFF;
+    color: #4C4B4C;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-image: url(536021\ \(1\).png);
+    background-size: cover;
+    background-position: center center; 
+}
+
+.main-login {
+    height: 50vh;
+    width: 70vw;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70p;
+}
+
+.left-login {
+    background-color: red;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    color: black;
+}
+
+.right-login {
+    background-color: blue;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-login > img {
+    height: 90%;
+}

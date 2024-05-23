@@ -97,8 +97,11 @@ footer {
     width: 100%;
     padding: 0px 300px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+footer a {
+    margin-left: 45vw;
 }
 
 footer a, ul {
@@ -109,4 +112,8 @@ footer a, ul {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.UERGS {
+    margin-left: -90px;
 }
